@@ -1,5 +1,10 @@
 CREATE DATABASE IF NOT EXISTS alx_book_store;
 
+create Table Authors(
+    author_id (Primary Key),
+    author_name VARCHAR(215)
+);
+
 Create Table Books(
     book_id (Primary Key),
     title VARCHAR(130),
@@ -7,10 +12,7 @@ Create Table Books(
     price DOUBLE,
     publication_date DATE
 );
-create Table Authors(
-    author_id (Primary Key),
-    author_name VARCHAR(215)
-);
+
 
 create Table Customers(
     customer_id (Primary Key),
